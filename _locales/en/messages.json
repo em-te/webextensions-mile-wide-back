@@ -1,0 +1,25 @@
+{
+  "extensionDescription": {
+    "message": "Allows you to quickly navigate your browser history and to switch between tabs by clicking on the left edge of your screen/window."
+  },
+
+  "suppWheel": {
+    "message": "Rotate your mouse wheel to view adjacent tabs"
+  },
+
+  "grantTabsPerm": {
+    "message": "Skip over system pages when viewing adjacent tabs"
+  },
+
+  "aboutChromePages": {
+    "message": "System pages (chrome://) are protected webpages and this extension cannot interact with them. Therefore, if you enter into a system page, this extension cannot get you out of them."
+  },
+
+  "demoTitle": {
+    "message": "Demo"
+  },
+
+  "demoBody": {
+    "message": "Rotate your mouse wheel to view adjacent tabs. Left click, right click and middle click to navigate back, navigate forward and close the current tab. Make sure your window is maximized."
+  }
+}
