@@ -1,0 +1,155 @@
+@media screen { body::after {display: none} }
+html, body, ul, li {margin: 0; padding: 0}
+html, body {height: 100%}
+body {font: normal 12pt/2em Arial; background: beige}
+#arrow {
+  position: absolute;
+  left: 0;
+  animation: leftbounce 1s ease-in-out alternate infinite;
+  top: 35vh;
+  font:20vh Arial;
+  color: black;
+  opacity: 0.3;
+  text-align: left;
+  user-select: none;
+}
+@keyframes leftbounce {
+  from {left:0} to {left: 20px; opacity: 0.1}
+}
+#help {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35vh;
+  font:20vh Times New Roman;
+  color: black;
+  opacity: 0.1;
+  text-align: center;
+  user-select: none;
+}
+#cover {
+  position: absolute;
+  left: 89px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font: 12pt Arial;
+  color: black;
+  background: beige;
+  opacity: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+#bars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+#bar9 {left: 39px; width: 60px}
+#bar8 {left: 21px; width: 18px}
+#bar7 {left: 15px; width: 6px}
+#bar6 {left: 11px; width: 4px}
+#bar5 {left: 7px; width: 4px}
+#bar4 {left: 5px; width: 2px}
+#bar3 {left: 3px; width: 2px}
+#bar2 {left: 1px; width: 2px}
+#bar1 {left: 0; width: 1px; cursor: alias}
+#bar9:hover ~ #cover {opacity: 0.1}
+#bar8:hover ~ #cover {opacity: 0.2}
+#bar7:hover ~ #cover {opacity: 0.3}
+#bar6:hover ~ #cover {opacity: 0.4}
+#bar5:hover ~ #cover {opacity: 0.5}
+#bar4:hover ~ #cover {opacity: 0.6}
+#bar3:hover ~ #cover {opacity: 0.7}
+#bar2:hover ~ #cover {opacity: 0.8}
+#bar1:hover ~ #cover {opacity: 1}
+#bar4:hover ~ #cover > #nav {opacity: 0.3}
+#bar3:hover ~ #cover > #nav {opacity: 0.5}
+#bar2:hover ~ #cover > #nav {opacity: 0.7}
+#bar1:hover ~ #cover > #nav {opacity: 1}
+#bar2:hover ~ #cover > #intro {opacity: 0.1}
+#bar1:hover ~ #cover > #intro {opacity: 0.7}
+
+#tabs {
+  padding:0 2%;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#tabs > * {
+  text-align: center;
+  border: solid black;
+  border-width: 2px 2px 0 2px;
+  margin: 0 1px;
+  padding: 4px 1.5em;
+  border-radius: 8px 8px 0 0;
+  background: #aaa linear-gradient(0deg, #999, #aaa 30%);
+  transition: padding 0.1s, margin 0.5s, opacity 0.1s;
+}
+#tabs > .selected {
+  background: #fff;
+  color: #000;
+  padding: 4px 2em;
+  margin-top: 0;
+}
+#tabs > .removed {
+  padding: 0;
+  margin: 0 -1em 0 3px;
+  opacity: 0;
+}
+#nav {
+  position: relative;
+  min-width: 220px;
+  width: 30vw;
+  border: 2px solid black;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 40pt;
+  color: #aaa;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  text-align: center;
+  user-select: none;
+  opacity: 0;
+}
+#nav > #swipe {
+  position: absolute;
+  left: 0;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  background: #444;
+}
+@keyframes nav1 {
+  0% {left: 0}
+  100% {left: 100%}
+}
+@keyframes nav2 {
+  0% {right: 100%}
+  100% {right: 0}
+}
+@keyframes navb1 {
+  0% {left: 0}
+  100% {left: 100%}
+}
+@keyframes navb2 {
+  0% {right: 100%}
+  100% {right: 0}
+}
+#intro {
+  font-style: italic;
+  max-width: 30em;
+  line-height: 1.5em;
+  opacity: 0;
+  text-align: justify;
+}
