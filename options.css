@@ -2,5 +2,5 @@ body {margin:1em 2em; min-width: 20em; font-size:12pt}
 label {display: block; margin-bottom: 1em}
 input[type=checkbox] {vertical-align:absmiddle; margin-right:0.7em}
 aside {padding: 0; margin: 0}
-label + aside {margin-top: 1em; margin-left: 1.5em}
+label + aside {margin-left: 1.5em}
 aside + aside {margin-top: 2em}
