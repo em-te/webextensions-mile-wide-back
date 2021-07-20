@@ -1,11 +1,11 @@
 {
   "name": "Mile Wide Back",
   "author": "Terry",
-  "version": "0.2.9",
+  "version": "0.3",
   "description": "__MSG_extensionDescription__",
   "manifest_version": 2,
   "default_locale": "en",
-  "homepage_url": "https://github.com/em-te",
+  "homepage_url": "https://github.com/em-te/webextensions-mile-wide-back",
   "icons": {
     "24": "mile_wide_back_24.png",
     "30": "mile_wide_back_30.png",
