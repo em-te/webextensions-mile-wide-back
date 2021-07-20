@@ -10,9 +10,10 @@ Turns the left edge of your browser window into a multi-purpose button for contr
 * Left click to navigate back
 * Right click to navigate forward
 * Middle-click to close the current tab
+* Left click and right click simultaneously to open a new blank tab
 * Rotate the mouse wheel to cycle through your tabs
 
-Using Fitt's Law, you can fling your wrist to the left of the screen without accuracy or coordination to reach the multi-purpose button. You could even do this blind-folded.
+Using Fitts Law, you can fling your wrist to the left of the screen without accuracy or coordination to reach the multi-purpose button. You could even do this blind-folded.
 
 Your window needs to be maximized to work.
 
