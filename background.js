@@ -49,7 +49,14 @@ chrome.runtime.onMessage.addListener(
       }
       lastWheel = 0;
 
-      if(msg.clickAction === 1) {
+      if(msg.clickAction === 3) {
+        chrome.tabs.create({
+          active: true,
+          index: tab.index + 1,
+          openerTabId: tab.id
+        });
+      
+      } else if(msg.clickAction === 1) {
         chrome.tabs.remove(tab.id);
 
       } else {
