@@ -21,8 +21,15 @@ window.addEventListener("mouseup", e => {
 window.addEventListener("mousedown", e => {
   mouseDown = false;
   if(e.screenX === 0 && e.screenY !== 0) {
-    mouseDown = true;
-    if(e.button === 1) stopProp(e);
+    if(e.buttons === 3) {  //left+right button concurrently pressed
+      stopProp(e);
+      chrome.runtime.sendMessage({
+        clickAction: e.buttons
+      });
+    } else {
+      mouseDown = true;
+      if(e.button === 1) stopProp(e);
+    }
   }
 }, true);
 
