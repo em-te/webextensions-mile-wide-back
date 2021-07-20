@@ -116,6 +116,7 @@ body {font: normal 12pt/2em Arial; background: beige}
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
   font-size: 40pt;
   color: #aaa;
+  background: rgba(0,0,0,0.1);
   margin: 0.5em 0;
   padding: 0.5em 0;
   text-align: center;
@@ -128,7 +129,7 @@ body {font: normal 12pt/2em Arial; background: beige}
   right: 100%;
   top: 0;
   bottom: 0;
-  background: #444;
+  background: #fff;
 }
 @keyframes nav1 {
   0% {left: 0}
